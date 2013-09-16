@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'langdon';
+  src: url('../fonts/Langdon.otf') format("opentype");
+}
+
+body {
+  background: url("../images/background.jpg") #ededed;
+  font-family: 'langdon', sans-serif;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #5c5c5c;
+  font-style: italic;
+  font-size: 17px;
+  text-shadow: 0 1px 0 #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+html, body, #wrapper, header {
+  height: 100%;
+}
+
+#wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;  
+}
+
+header .header-wrapper {
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 500px;
+  }
+}
+
+header h1 {
+  margin: 0 0 20px 0;
+  font-family: 'langdon', sans-serif;
+  font-size: 50px;
+}
+
+header h2, article h2 {
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+article h2 {
+  font-size: 15px;
+  margin: 0;
+}
+
+header h2 span {
+  display: block;
+  line-height: 1.5em;
+}
+
+header .profile-img {
+  display: block;
+  text-align: center;
+}
+header .profile-img img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+#header-mask {
+  width: 1800px;
+  background: rgba(22,22,22,0.15);
+  position: absolute;
+  top: 0;
+  right: -15px;
+  height: 100%;
+  z-index: -1;
+  height: 100%;
+  min-height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+#main {
+  min-height: 100%;
+}
+
+#main article {
+  margin: 24px 24px 0 24px;
+  background: #FFF;
+  display: block;
+  padding: 12px;
+  background: #FFF;
+  position: relative;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 8px #aaa;
+    -webkit-box-shadow: 2px 2px 8px #aaa;
+    -moz-box-shadow: 2px 2px 8px #aaa;
+}
+
+footer.social {
+  border-top: 1px solid #dadada;
+}
+
+footer.social a {
+  color: #5c5c5c;
+  /*text-shadow: 0 1px 0 #fff;*/
+  font-size: 50px;
+}
+
+footer.social a:hover {
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+
+/* safari and chrome */
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform:rotate(4deg);}
+  50% {-webkit-transform:rotate(-4deg);}
+  100% {-webkit-transform:rotate(4deg);}
+}
+ 
+/* firefox */
+@-moz-keyframes wiggle {
+  0% {-moz-transform:rotate(4deg);}
+  50% {-moz-transform:rotate(-4deg);}
+  100% {-moz-transform:rotate(4deg);}
+}
+ 
+/* anyone brave enough to implement the ideal method */
+@keyframes wiggle {
+  0% {transform:rotate(4deg);}
+  50% {transform:rotate(-4deg);}
+  100% {transform:rotate(4deg);}
+}
+ 
+.wiggler:hover {
+  -webkit-animation: wiggle 0.3s infinite;
+  -moz-animation: wiggle 0.3s infinite;
+  animation: wiggle 0.3s infinite;
+}

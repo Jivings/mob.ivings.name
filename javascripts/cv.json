@@ -1,0 +1,26 @@
+{
+  "name"   : "James Ivings",
+  "skills" : {
+    "Web Development": { 
+      "JavaScript" : {
+        "confidence" : 90
+      },
+      "HTML/CSS" : {
+        "confidence" : 85
+      }
+    },
+
+    "Programming": {
+      "Java" : {
+        "confidence" : 70
+      },
+      "Node.js" : {
+        "confidence" : 80
+      }
+    }
+
+    
+
+  }
+
+}
