@@ -1,26 +1,49 @@
 {
-  "name"   : "James Ivings",
-  "skills" : {
-    "Web Development": { 
-      "JavaScript" : {
-        "confidence" : 90
+  "name": "James Ivings",
+  "skills": {
+    "Web Dev": [
+      {
+        "name": "JavaScript",
+        "confidence": 90
       },
-      "HTML/CSS" : {
-        "confidence" : 85
+      { "name": "HTML/CSS",
+        "confidence": 85
+      },
+      {
+        "name": "d3",
+        "confidence": 70
+      },
+      {
+        "name": "jQuery",
+        "confidence": 90
+      },
+      {
+        "name": "Backbone",
+        "confidence": 75
       }
-    },
+    ],
 
-    "Programming": {
-      "Java" : {
-        "confidence" : 70
+    "Core": [
+      { 
+        "name": "Java",
+        "confidence": 70
       },
-      "Node.js" : {
-        "confidence" : 80
+      {
+        "name": "Node.js",
+        "confidence": 80
+      },
+      {
+        "name": "Ruby",
+        "confidence": 40
       }
+    ]
+      
+  },
+  "qualifications": [
+    {
+      "qualification": "BSc (Hons) Computer Science",
+      "establishment": "University of The West of England, Bristol",
+      "result": "Received a first class honours."
     }
-
-    
-
-  }
-
+  ]
 }

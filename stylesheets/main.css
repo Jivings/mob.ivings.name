@@ -1,3 +1,5 @@
+@import "charts.css";
+
 @font-face {
   font-family: 'langdon';
   src: url('../fonts/Langdon.otf') format("opentype");
@@ -15,13 +17,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+p {
+  font-size: 13px;
+  margin: 0 10px;
+  padding: 0;
+  font-family: georgia, "times new roman", serif;
+  line-height: 20px;
+}
+
 
 html, body, #wrapper, header {
   height: 100%;
 }
 
 #wrapper {
-  max-width: 1080px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -54,8 +64,9 @@ header h2, article h2 {
 }
 
 article h2 {
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 header h2 span {
@@ -70,6 +81,7 @@ header .profile-img {
 header .profile-img img {
   border-radius: 50%;
   -webkit-border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.1);
 }
 
 #header-mask {
@@ -97,7 +109,7 @@ header .profile-img img {
   padding: 12px;
   background: #FFF;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   box-shadow: 2px 2px 8px #aaa;
     -webkit-box-shadow: 2px 2px 8px #aaa;
     -moz-box-shadow: 2px 2px 8px #aaa;
@@ -144,4 +156,8 @@ footer.social a:hover {
   -webkit-animation: wiggle 0.3s infinite;
   -moz-animation: wiggle 0.3s infinite;
   animation: wiggle 0.3s infinite;
+}
+
+#so-link {
+  margin-top: 6px;
 }

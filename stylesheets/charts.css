@@ -1,0 +1,20 @@
+.chart rect {
+	stroke: white;
+	fill: #808080;
+	opacity: 0.8;
+}
+
+.chart rect:hover {
+	opacity: 1;
+}
+
+.chart text {
+	font: 12px sans-serif;
+	text-shadow: none;
+	fill: white;
+	font-weight: bold
+}	
+
+svg {
+	margin-left: 10px;
+}
