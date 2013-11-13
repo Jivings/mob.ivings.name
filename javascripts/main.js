@@ -8,24 +8,23 @@
     qualiications = cv.qualiications;
 
     _.each(skills, renderChart);
-    _.each(qualiications, renderQualification);
+    // _.each(qualiications, renderQualification);
     
   }
 
-  var renderQualifications = function(q) {
-    var el = d3.select('#qualifications')
+  // var renderQualifications = function(q) {
+  //   var el = d3.select('#qualifications')
     
     
-  }
+  // }
 
   var renderChart = function(skills, name) {
 
-    // container.append('h2')
-    //   .text(name);
+    var maxWidth = parseInt(container.style('width')) - 15;
 
     var chart = container.append("svg")
      .attr("class", "chart")
-     .attr("width", 420)
+     .attr("width", maxWidth)
      .attr("height", 20 * skills.length)
 
     chart.append('defs')
@@ -40,15 +39,13 @@
       .attr('x', 0)
       .attr('y', 0)
       .attr('width', 220)
-      .attr('height', 30)
-    
-    
+      .attr('height', 30);
 
     var names = _.pluck(skills, 'name');
     var data = _.pluck(skills, 'confidence');
     var x = d3.scale.linear()
       .domain([0, 100])
-      .range([0, 420]);
+      .range([0, maxWidth]);
     var y = d3.scale.ordinal()
       .domain(data)
       .rangeBands([0, 120]);
@@ -92,7 +89,7 @@
       .attr("y2", 20 * skills.length)
       .style("stroke", "#000");
 
-return 0;
+    return 0;
   };
 
   d3.json('javascripts/cv.json', render);
